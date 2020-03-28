@@ -25,9 +25,9 @@
     // 需要直接注入页面的JS
     "content_scripts": [
         {
-            //"matches": ["http://*/*", "https://*/*"],
+            "matches": ["http://*.bilibili.com/*", "https://*.bilibili.com/*"],
             // "<all_urls>" 表示匹配所有地址
-            "matches": ["<all_urls>"],
+            //"matches": ["<all_urls>"],
             // 多个JS按顺序注入
             "js": ["content_scripts/bilibili.js"],
             // JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式

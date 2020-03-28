@@ -6,7 +6,6 @@
             for (let i of console_options.console_options) {
                 if (i.name == "bilibili") {
                     bilibili_options = i;
-                    console.log(bilibili_options);
                     log("脚本初始化完毕");
                     break;
                 }
